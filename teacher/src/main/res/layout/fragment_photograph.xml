@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3.8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8">
+
+        <!--
+        为适应不同屏幕的手机，ImageView显示的图片可能不铺满屏幕，如果定高的话，
+        两边可能会出现空白。魅族手机就会有这种情况，在其他手机里显示正常，
+        在魅族手机里显示，图片左右两边会出现空白，为解决这一问题，
+        可以使用android:scaleType属性来处理，处理方式如下：
+        在xml中设置直接使用：android:scaleType="centerCrop"
+        在Java中设置使用：imageView.setScaleType
+        (ImageView.ScaleType.CENTER_CROP);
+    -->
+        <ImageView
+            android:id="@+id/iv_dispaly_image"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_clockin_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_check"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:syllabus="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_course"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.recognizer.classchecks.course.CourseActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <com.library.widget.CustomToolbar
+            android:id="@+id/custom_toolbar_course"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_toolbar_height">
+        </com.library.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            layout="@layout/course_table_title"
+            />
+        <com.recognizer.common.widget.syllabus.SyllabusHeadView
+            android:id="@+id/datebar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            syllabus:textColor="@color/text_color_edit_txt"
+            android:layout_below="@id/title"
+            syllabus:textSize="12sp"/>
+
+        <!-- 课程表body部分 -->
+        <!--
+            删除ScrollView拉到尽头（顶部、底部），然后继续拉出现的阴影效果
+                适用于2.3及以上的 否则不用设置
+            android:overScrollMode="never"
+        -->
+        <ScrollView
+            android:id="@+id/scroll_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/datebar"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="15.2"
+                android:orientation="horizontal">
+                <!-- 每天课程节数 -->
+                <!--设置marginLeft=1dp解决节次与表头的月份不重合的问题-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/syllabus_section_margin_left"
+                    android:layout_weight="1.2">
+                    <com.recognizer.common.widget.syllabus.SyllabusSectionView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        syllabus:numTextColor="@color/text_color_edit_txt"
+                        syllabus:numTextHeight="56dp"
+                        syllabus:numTextSize="12sp"
+                        syllabus:numTextBackground="@drawable/syllabus_section_textview_border_right"
+                        syllabus:numTextNumber="10"/>
+                </LinearLayout>
+                <!-- 课程信息 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="14"
+                    android:layout_marginTop="1dp">
+                    <com.recognizer.common.widget.syllabus.SyllabusBodyView
+                        android:id="@+id/sbv_show_course"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

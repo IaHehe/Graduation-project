@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_item_clockin"
+            android:icon="@drawable/icon_clockin1"
+            android:title="@string/navigation_drawer_clockin"/>
+        <item
+            android:id="@+id/nav_item_record"
+            android:icon="@drawable/icon_record"
+            android:title="@string/navigation_drawer_clockrecord"/>
+        <item
+            android:id="@+id/nav_item_course"
+            android:icon="@drawable/icon_course"
+            android:title="@string/navigation_drawer_course"/>
+        <item
+            android:id="@+id/nav_item_setting"
+            android:icon="@drawable/icon_setting"
+            android:title="@string/navigation_drawer_setting"/>
+    </group>
+
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_startup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.recognizer.classchecks.startup.StartupActivity">
+    <LinearLayout
+        android:id="@+id/ll_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/iv_launcher_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_system"/>
+        <TextView
+            android:id="@+id/tv_launcher_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:gravity="center"
+            android:textColor="@color/text_color_edit_txt"
+            android:typeface="sans"
+            android:text="@string/app_name"/>
+    </LinearLayout>
+
+</FrameLayout>

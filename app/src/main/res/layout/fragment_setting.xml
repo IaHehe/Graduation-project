@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_ddd">
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <LinearLayout style="@style/setting_item_layout_margin_bottom">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_questionblue"/>
+            <TextView
+                android:id="@+id/tv_setting_question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/settings_question"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/setting_item_layout">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_about"/>
+            <TextView
+                android:id="@+id/tv_setting_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/settings_about"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/wrap_layout"
+        android:layout_marginTop="@dimen/layout_margin_24dp">
+        <LinearLayout style="@style/setting_item_layout">
+            <TextView
+                android:id="@+id/tv_exit_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_18sp"
+                android:text="@string/settings_btn_quit"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

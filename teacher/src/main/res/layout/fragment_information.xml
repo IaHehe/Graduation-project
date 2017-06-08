@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zou="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_ddd">
+
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/setting_item_layout">
+            <TextView style="@style/user_textview_title"
+                android:text="人脸信息"/>
+            <com.library.widget.BorderRadiusImageView
+                android:id="@+id/briv_information_modify_headr"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/aa"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center"
+                zou:borderRadius="4dp"
+                zou:type="round"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <LinearLayout
+            style="@style/setting_item_layout_margin_bottom">
+            <TextView
+                style="@style/user_textview_title"
+                android:text="真实姓名" />
+            <TextView
+                style="@style/user_textview_content"
+                android:text="邹东军" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/setting_item_layout_margin_bottom">
+            <TextView
+                style="@style/user_textview_title"
+                android:text="学号" />
+            <TextView
+                style="@style/user_textview_content"
+                android:text="2013440020" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/setting_item_layout_margin_bottom">
+            <TextView
+                style="@style/user_textview_title"
+                android:text="我的班级" />
+            <TextView
+                style="@style/user_textview_content"
+                android:text="计科1302" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/setting_item_layout">
+            <TextView
+                style="@style/user_textview_title"
+                android:text="手机号码" />
+            <TextView
+                android:id="@+id/tv_information_modify_phone"
+                style="@style/user_textview_content"
+                android:text="18302390780" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

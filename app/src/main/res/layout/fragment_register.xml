@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_24dp"
+        android:padding="@dimen/padding_3dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rect_green_border_shade">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_headicon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/layout_margin_36dp"
+        android:layout_marginLeft="@dimen/layout_margin_32dp"
+        android:layout_marginRight="@dimen/layout_margin_32dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_green_bottom_shade">
+
+            <ImageView
+                android:id="@+id/iv_register_phone_icon"
+                style="@style/login_image_view_icon_style"
+                android:src="@drawable/icon_phone" />
+            <View
+                android:id="@+id/view_phone"
+                style="@style/login_vertical_line_style"
+                android:layout_toRightOf="@id/iv_register_phone_icon" />
+            <EditText
+                android:id="@+id/et_register_phone"
+                style="@style/login_edit_text_view_style"
+                android:inputType="phone|number"
+                android:layout_toRightOf="@id/view_phone"
+                android:hint="@string/login_user_number" />
+            <ImageView
+                android:id="@+id/iv_register_phone_clear"
+                style="@style/login_image_view_clear_style" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_register_sms_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_green_bottom_shade">
+
+            <ImageView
+                android:id="@+id/iv_register_sms_icon"
+                style="@style/login_image_view_icon_style"
+                android:src="@drawable/icon_text" />
+            <View
+                android:id="@+id/view_sms_code"
+                style="@style/login_vertical_line_style"
+                android:layout_toRightOf="@id/iv_register_sms_icon" />
+            <EditText
+                android:id="@+id/et_register_sms_code"
+                style="@style/login_edit_text_view_style"
+                android:inputType="number"
+                android:digits="@string/edit_text_allow_character_numeric"
+                android:layout_toRightOf="@id/view_sms_code"
+                android:hint="@string/save_info_sms_code" />
+            <Button
+                android:id="@+id/btn_register_sms_code"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                style="@style/btnStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="14sp"
+                android:background="@drawable/shade_sms_code_green_bg_border_radius"
+                android:text="获取验证码"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/btnStyle"
+            android:layout_marginTop="@dimen/layout_margin_48dp"
+            android:background="@drawable/shade_green_bg_border_radius"
+            android:text="@string/btn_register"
+            android:textSize="@dimen/text_size_18sp"/>
+    </LinearLayout>
+
+</LinearLayout>

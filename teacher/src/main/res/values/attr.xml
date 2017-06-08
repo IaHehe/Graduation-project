@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SyllabusHeadView">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textBackground" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="SyllabusSectionView">
+        <attr name="numTextSize" format="dimension" /> <!--字体大小-->
+        <attr name="numTextWidth" format="dimension" /> <!--表格宽度-->
+        <attr name="numTextHeight" format="dimension" /> <!--表格高度-->
+        <attr name="numTextColor" format="color" /> <!--字体颜色-->
+        <attr name="numTextBackground" format="reference|color"/> <!--表格背景-->
+        <attr name="numTextNumber" format="integer"/> <!--单日课时节数-->
+    </declare-styleable>
+
+    <declare-styleable name="SyllabusBodyView">
+        <attr name="TextSize" format="dimension"/>
+        <attr name="column" format="integer"/><!--课表的列数，表示每周的天数-->
+        <attr name="row" format="integer"/> <!--每天上课的节次-->
+    </declare-styleable>
+</resources>

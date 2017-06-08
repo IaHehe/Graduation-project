@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">学生端</string><!--学生端-->
+    <string name="app_copyright">Copyright © 2017 classroom checks. All right reserved.</string>
+    <string name="app_author">基于人脸识别的学生考勤系统 -- 邹东军</string>
+
+    <!--activity toolbar 标题-->
+    <string name="activity_information_main_title">个人信息</string>
+    <string name="activity_login_main_title">登录</string>
+    <string name="activity_clockrecord_main_title">打卡记录</string>
+    <string name="activity_setting_main_title">设置</string>
+    <string name="activity_course_main_title">课表</string>
+    <string name="activity_import_table_main_title">导入课程表</string>
+    <string name="activity_take_picture_main_title">收集人脸信息</string>
+    <string name="activity_detection_activity">考勤</string>
+
+    <!--drawerLayout 切换相关-->
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+
+    <!--drawerLayout 侧滑菜单相关-->
+    <string name="navigation_drawer_clockin">打卡</string>
+    <string name="navigation_drawer_clockrecord">打卡记录</string>
+    <string name="navigation_drawer_course">课表</string>
+    <string name="navigation_drawer_setting">设置</string>
+
+    <!--登录Activity 布局相关-->
+    <string name="login_user_number">手机号码</string>
+    <string name="login_user_pwd">登录密码</string>
+    <string name="save_info_new_phone">新手机号</string>
+    <string name="save_info_sms_code">验证码</string>
+    <string name="login_user_real_name">真实姓名</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_register">注册</string>
+    <string name="btn_save_info">保存</string>
+    <string name="register_text">注册</string>
+
+    <string name="btn_capture">拍照</string>
+
+
+    <string name="modify_phone_fragment_main_title">修改个人信息</string>
+
+    <!--设置Activity 布局相关-->
+    <string name="settings_question">常见问题</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_btn_quit">退出登录</string>
+
+    <string name="about_to_score">去评分</string>
+    <string name="about_service_agreement">服务协议</string>
+    <string name="about_privacy_protocol">隐私协议</string>
+
+    <string name="import_table_eduational_number">学生学号</string>
+    <string name="import_table_eduational_pwd">教务密码</string>
+    <string name="btn_import_table">导入课表</string>
+
+    <string name="edit_text_allow_character_all">qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890</string>
+    <string name="edit_text_allow_character_numeric">1234567890</string>
+    
+    <string-array name="clockRecordPopup">
+        <item>教学周</item>
+        <item>周次</item>
+        <item>考勤类型</item>
+    </string-array>
+
+</resources>

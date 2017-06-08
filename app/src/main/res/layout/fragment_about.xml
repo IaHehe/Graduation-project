@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color_ddd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_36dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_block"/>
+        <TextView
+            android:id="@+id/tv_app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_8dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_color_list_item"
+            android:text="当前版本 1.0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/layout_margin_36dp">
+        <LinearLayout style="@style/wrap_layout" >
+            <LinearLayout style="@style/setting_item_layout_margin_bottom">
+                <TextView style="@style/user_textview_title" android:text="@string/about_to_score" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/setting_item_layout_margin_bottom">
+                <TextView style="@style/user_textview_title" android:text="@string/about_service_agreement" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/setting_item_layout_margin_bottom">
+                <TextView style="@style/user_textview_title" android:text="@string/about_privacy_protocol" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin_16dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_12sp"
+            android:textColor="@color/text_color_copyright"
+            android:text="@string/app_copyright"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_8dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_12sp"
+            android:textColor="@color/text_color_copyright"
+            android:text="@string/app_author"/>
+    </LinearLayout>
+</LinearLayout>

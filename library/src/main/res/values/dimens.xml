@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--marin-->
+    <dimen name="layout_margin_16dp">16dp</dimen>
+    <dimen name="layout_margin_24dp">24dp</dimen>
+    <dimen name="layout_margin_32dp">32dp</dimen>
+    <dimen name="layout_margin_36dp">36dp</dimen>
+    <dimen name="layout_margin_48dp">48dp</dimen>
+    <dimen name="layout_margin_64dp">64dp</dimen>
+
+    <dimen name="layout_padding_10dp">10dp</dimen>
+    <dimen name="layout_padding_15dp">15dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_32sp">32sp</dimen>
+    <dimen name="text_size_36sp">36sp</dimen>
+    <dimen name="text_size_48sp">48sp</dimen>
+
+    <!-- 图片边框圆角大小 -->
+    <dimen name="nav_slide_image_border_radius">4dp</dimen>
+</resources>

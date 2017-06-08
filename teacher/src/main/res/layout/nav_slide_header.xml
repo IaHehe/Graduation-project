@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zou="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_nav_personal_info"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_slide_head_area_height"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@drawable/shade_green_gradient">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_24dp"
+        android:padding="@dimen/padding_3dp"
+        android:background="@drawable/rect_white_border_shade"
+        android:layout_gravity="center">
+        <com.library.widget.BorderRadiusImageView
+            android:id="@+id/raiv_user_image"
+            android:layout_width="@dimen/nav_slide_head_portrait_width"
+            android:layout_height="@dimen/nav_slide_head_portrait_height"
+            android:src="@drawable/default_headicon"
+            android:layout_gravity="center"
+            zou:borderRadius="@dimen/nav_slide_image_border_radius"
+            zou:type="round">
+        </com.library.widget.BorderRadiusImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_18dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_id_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_2dp"
+            android:text="伍建全"
+            android:textStyle="normal"
+            android:textColor="@color/text_color_fff"
+            android:textSize="@dimen/text_size_18sp"/>
+        <TextView
+            android:id="@+id/tv_id_user_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_2dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/text_color_fff"
+            android:text="2001018"/>
+        <TextView
+            android:id="@+id/tv_id_user_grade_classes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_2dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/text_color_fff"
+            android:text="计算机系"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+   <LinearLayout
+       android:id="@+id/ll_time_date"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:background="@color/colorPrimaryDark"
+       android:orientation="vertical"
+       android:gravity="center">
+      <TextView
+          android:id="@+id/tv_time_show"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/text_color_fff"
+          android:textSize="@dimen/text_size_48sp"
+          android:text="13:03:56"/>
+      <TextView
+          android:id="@+id/tv_date_week_show"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/layout_margin_10dp"
+          android:textColor="@color/text_color_fff"
+          android:textSize="@dimen/text_size_16sp"
+          android:text="2017-4-25  星期二"/>
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2">
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+         <ImageView
+             android:id="@+id/iv_clock_in"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:src="@drawable/button_clockin"
+             android:layout_gravity="center"
+             android:layout_marginTop="@dimen/layout_margin_64dp"/>
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/clockin_bg"
+             android:layout_gravity="bottom"/>
+      </FrameLayout>
+   </LinearLayout>
+
+</LinearLayout>

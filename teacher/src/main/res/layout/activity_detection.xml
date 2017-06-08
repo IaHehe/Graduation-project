@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_capture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".classchecks.camera.DetectionActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+        <TextureView
+            android:id="@+id/capture_texture"
+            android:layout_width="match_parent"
+            android:layout_height="450dp" />
+        <com.library.widget.RectangleSurfaceView
+            android:id="@+id/faces_rect_activity_capture"
+            android:layout_width="match_parent"
+            android:layout_height="450dp" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="拍照"/>
+    <TextView
+        android:id="@+id/tv_show_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

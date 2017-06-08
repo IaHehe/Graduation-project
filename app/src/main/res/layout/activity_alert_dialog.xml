@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_alert_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.recognizer.classchecks.home.AlertDialogActivity">
+
+    <Button
+        android:id="@+id/btn_alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_edit_txt"
+        android:text="弹出对话框"/>
+
+    <Button
+        android:id="@+id/btn_loading_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_edit_txt"
+        android:text="加载等待框"/>
+    <Button
+        android:id="@+id/btn_custom_alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_edit_txt"
+        android:text="自定义akertdialog"/>
+
+</LinearLayout>

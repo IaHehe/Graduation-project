@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_ddd">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <com.library.widget.CustomToolbar
+            android:id="@+id/custom_toolbar_generate_report"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_toolbar_height">
+        </com.library.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <LinearLayout style="@style/setting_item_layout_margin_bottom">
+            <TextView
+                android:id="@+id/tv_export_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/generate_semester_report"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>
+
+        <!--<LinearLayout style="@style/setting_item_layout">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_about"/>
+            <TextView
+                android:id="@+id/tv_setting_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/settings_about"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout style="@style/wrap_layout"
+        android:layout_marginTop="@dimen/layout_margin_24dp">
+        <LinearLayout style="@style/setting_item_layout">
+            <TextView
+                android:id="@+id/tv_ensure_export"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="@string/ensure_export"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="custom_toolbar_height">35dp</dimen>
+
+    <!--marin-->
+    <dimen name="layout_margin_8dp">8dp</dimen>
+    <dimen name="layout_margin_10dp">10dp</dimen>
+    <dimen name="layout_margin_12dp">12dp</dimen>
+    <dimen name="layout_margin_14dp">14dp</dimen>
+    <dimen name="layout_margin_16dp">16dp</dimen>
+    <dimen name="layout_margin_18dp">18dp</dimen>
+    <dimen name="layout_margin_20dp">20dp</dimen>
+    <dimen name="layout_margin_24dp">24dp</dimen>
+    <dimen name="layout_margin_28dp">28dp</dimen>
+    <dimen name="layout_margin_32dp">32dp</dimen>
+    <dimen name="layout_margin_36dp">36dp</dimen>
+    <dimen name="layout_margin_48dp">48dp</dimen>
+    <dimen name="layout_margin_64dp">64dp</dimen>
+
+    <!-- padding -->
+    <dimen name="padding_1dp">1dp</dimen>
+    <dimen name="padding_2dp">2dp</dimen>
+    <dimen name="padding_3dp">3dp</dimen>
+    <dimen name="padding_4dp">4dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="padding_16dp">16dp</dimen>
+
+    <!-- 侧滑菜单 -->
+    <dimen name="nav_slide_head_area_height">192dp</dimen>
+    <!-- 头像宽度、高度 -->
+    <dimen name="nav_slide_head_portrait_width">66dp</dimen>
+    <dimen name="nav_slide_head_portrait_height">88dp</dimen>
+    <!-- 图片边框圆角大小 -->
+    <dimen name="nav_slide_image_border_radius">4dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_32sp">32sp</dimen>
+    <dimen name="text_size_36sp">36sp</dimen>
+    <dimen name="text_size_48sp">48sp</dimen>
+
+
+    <dimen name="syllabus_section_margin_left">2dip</dimen>
+
+    <!-- 修改navigationView 菜单项 图标与文字的间距大小 -->
+    <dimen name="design_navigation_icon_padding" tools:override="true">22dp</dimen>
+    <!-- 修改navigationView 菜单项文字的大小 -->
+    <dimen name="design_navigation_icon_size">18dp</dimen>
+
+
+</resources>

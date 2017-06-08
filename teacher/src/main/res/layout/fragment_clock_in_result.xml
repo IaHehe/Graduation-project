@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.recognizer.classchecks.clockin.fragment.ClockInResultFragment">
+
+    <ListView
+        android:layout_marginTop="@dimen/layout_margin_8dp"
+        android:id="@+id/lv_clock_in_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:dividerHeight="@dimen/layout_margin_8dp"
+        android:divider="@null"/>
+
+</LinearLayout>

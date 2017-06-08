@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_warning" />
+        <TextView android:textColor="@android:color/darker_gray"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView android:layout_marginLeft="20dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/message"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/dialog_content_text_color"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGray"/>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shade_white_bg_bottom_radius"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_layout"
+                android:textSize="12sp"
+                android:textColor="@color/dialog_bttton_text_color_gray"
+                android:text="取消"
+                android:layout_weight="1"
+                android:lines="1" />
+            <View
+                android:id="@+id/bottom_separator"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_layout"
+                android:text="确定"
+                android:textSize="12sp"
+                android:textColor="@color/dialog_button_text_color_green"
+                android:layout_weight="1"
+                android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 底部椭园边缘 -->
+    <!--<ImageView
+        android:layout_marginTop="-2dp"
+        android:layout_width="400dp"
+        android:layout_height="22dp"
+        android:src="@drawable/dialog_bottom" >
+    </ImageView>-->
+
+</LinearLayout>

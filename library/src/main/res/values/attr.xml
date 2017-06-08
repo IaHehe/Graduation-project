@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 画圆角矩形的属性 -->
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <!-- 下拉选择属性 -->
+    <declare-styleable name="PopupView">
+        <attr name="popupNum" format="integer"/> <!--下拉选择框的个数-->
+        <attr name="defaultTxt" format="reference"/> <!--下拉选择菜单默认显示的文字-->
+        <attr name="defaultTxtColor" format="reference|color"/> <!--下拉选择菜单默认文字的字体颜色-->
+        <attr name="selectedTxtColor" format="reference|color"/> <!--下拉选择菜单被选中后文字的颜色-->
+    </declare-styleable>
+
+</resources>

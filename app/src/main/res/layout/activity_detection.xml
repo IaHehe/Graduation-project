@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_capture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".classchecks.camera.DetectionActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <com.library.widget.CustomToolbar
+            android:id="@+id/custom_toolbar_detection"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_toolbar_height">
+        </com.library.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+        <TextureView
+            android:id="@+id/capture_texture"
+            android:layout_width="match_parent"
+            android:layout_height="450dp" />
+        <com.library.widget.RectangleSurfaceView
+            android:id="@+id/faces_rect_activity_capture"
+            android:layout_width="match_parent"
+            android:layout_height="450dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_show_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_18dp"
+            android:textSize="@dimen/text_size_18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:text="@null"/>
+        <TextView
+            android:id="@+id/tv_show_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_18dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_color_edit_txt"
+            android:visibility="gone"
+            android:text="@null"/>
+    </LinearLayout>
+
+</LinearLayout>
